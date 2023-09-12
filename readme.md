@@ -5,8 +5,8 @@ using [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/AP
 
 ## Stream urls
 
-* Events: <meshcube-base-url>/bpe/events
-* Logs: <meshcube-base-url>/bpe/logs
+* Events: `meshcube-base-url`/bpe/events
+* Logs: `meshcube-base-url`/bpe/logs
 
 ## Requirements
 
