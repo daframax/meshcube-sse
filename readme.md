@@ -1,7 +1,12 @@
 ## Description
 
-This simple application show how to get `events` and `logs` from realtime notification
-using [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
+This simple application shows how to get `events` and `logs` from realtime notification
+using [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events) implemented by MeshCube v5.6.8+
+
+## Stream urls
+
+* Events: <meshcube-base-url>/bpe/events
+* Logs: <meshcube-base-url>/bpe/logs
 
 ## Requirements
 
@@ -30,6 +35,17 @@ To start the application launch the main script passing the MeshCube base url an
 node index.js «MESHCUBE_URL» events | logs
 ```
 
+### Examples
+
+Events:
+```bash
+node index.js http://localhost events
+```
+
+Logs:
+```bash
+node index.js http://localhost logs
+```
 
 
 
