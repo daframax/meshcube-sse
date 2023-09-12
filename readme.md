@@ -1,36 +1,35 @@
 ## Description
 
-[Contentful](https://www.contentful.com) provides a content infrastructure for digital teams to power content in websites, apps, and devices. Unlike a CMS, Contentful was built to integrate with the modern software stack. It offers a central hub for structured content, powerful management and delivery APIs, and a customizable web app that enable developers and content creators to ship digital products faster.
+This simple application show how to get `events` and `logs` from realtime notification
+using [Server-Sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
 
 ## Requirements
 
-* Node 8
-* Git
-* Contentful CLI (only for write access)
+* Node 10+
+* A Running [MeshCube](https://www.blueupbeacons.com/index.php?page=meshcube) instance.
 
-Without any changes, this app is connected to a Contentful space with read-only access. To experience the full end-to-end Contentful experience, you need to connect the app to a Contentful space with read _and_ write access. This enables you to see how content editing in the Contentful web app works and how content changes propagate to this app.
 
 ## Common setup
 
 Clone the repo and install the dependencies.
 
 ```bash
-git clone https://github.com/contentful/the-example-app.nodejs.git
-cd the-example-app.nodejs
+git clone https://github.com/daframax/meshcube-sse.git
+cd meshcube-sse
 ```
 
 ```bash
 npm install
 ```
 
-## Steps for read-only access
+## Running the application
 
-To start the express server, run the following
+To start the application launch the main script passing the MeshCube base url and the required target (events or logs)
 
 ```bash
-npm run start:dev
+node index.js «MESHCUBE_URL» events | logs
 ```
 
-Open [http://localhost:3000](http://localhost:3000) and take a look around.
+
 
 
